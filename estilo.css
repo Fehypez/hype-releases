@@ -1,0 +1,68 @@
+:root {
+  color-scheme: dark;
+  --fundo: #101112;
+  --texto: #e8eae6;
+  --suave: #a1a6a0;
+  --destaque: #b8f36b;
+}
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+a {
+  color: var(--destaque);
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+}
+
+.data,
+.voltar,
+.rodape {
+  color: var(--suave);
+  font-size: 0.9rem;
+}
+
+.inicio {
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.marca {
+  font-size: 4.5rem;
+  letter-spacing: 0.04em;
+  color: var(--destaque);
+  margin: 0;
+}
+
+.lema {
+  font-weight: 600;
+}
+
+.lema span {
+  color: var(--destaque);
+}
+
+.botao {
+  display: inline-block;
+  margin: 1.5rem 0;
+  padding: 0.9rem 1.6rem;
+  border-radius: 1rem;
+  background: var(--destaque);
+  color: var(--fundo);
+  font-weight: 800;
+  text-decoration: none;
+}
