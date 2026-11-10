@@ -1,9 +1,10 @@
 :root {
   color-scheme: dark;
-  --fundo: #101112;
+  --fundo: #08090a;
   --texto: #e8eae6;
   --suave: #a1a6a0;
-  --destaque: #b8f36b;
+  --destaque: #a5f42a;
+  --marca: linear-gradient(to right, #8ef20f, #bcf644);
 }
 
 body {
@@ -42,10 +43,14 @@ h2 {
 }
 
 .marca {
-  font-size: 4.5rem;
-  letter-spacing: 0.04em;
-  color: var(--destaque);
   margin: 0;
+}
+
+.marca img {
+  display: block;
+  width: min(24rem, 80vw);
+  height: auto;
+  margin: 0 auto;
 }
 
 .lema {
@@ -53,7 +58,10 @@ h2 {
 }
 
 .lema span {
-  color: var(--destaque);
+  background: var(--marca);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .botao {
@@ -61,8 +69,8 @@ h2 {
   margin: 1.5rem 0;
   padding: 0.9rem 1.6rem;
   border-radius: 1rem;
-  background: var(--destaque);
-  color: var(--fundo);
+  background: var(--marca);
+  color: #0d1a02;
   font-weight: 800;
   text-decoration: none;
 }
