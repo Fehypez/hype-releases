@@ -74,3 +74,37 @@ h2 {
   font-weight: 800;
   text-decoration: none;
 }
+
+/* Aviso que não pode passar despercebido (ex.: conteúdo envolvendo crianças e adolescentes). */
+.aviso {
+  border: 1px solid var(--destaque);
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.aviso h2 {
+  margin-top: 0;
+}
+
+/* Informação que ainda falta: precisa ser vista e preenchida antes de valer. */
+.pendente {
+  background: #5a1a1a;
+  color: #ffd7d7;
+  padding: 0 0.3rem;
+  border-radius: 0.3rem;
+  font-weight: 700;
+}
+
+.rascunho {
+  border-left: 3px solid var(--suave);
+  padding-left: 0.9rem;
+  color: var(--suave);
+  font-size: 0.9rem;
+}
+
+nav.paginas {
+  color: var(--suave);
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
